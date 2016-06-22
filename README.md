@@ -29,21 +29,18 @@ Control of Program:
 
 - Once a client is run (by following the directions above) then the following occurs:
 
-- The chat client will be prompted to choose a handle name, enter your name and press the enter key. Example handle: kara&gt;
+		The chat client will be prompted to choose a handle name, enter your name and press the enter key. Example handle: kara&gt;
 
-- Once the message indicating you are connected appears, “You are connected!
+		Once the message indicating you are connected appears, “You are connected! Max message length is 500 characters…”, 
 
-Max message length is 500 characters…”, 
+		**you, the client will send the first message**
 
-***you, the client will send the first message***
+		The server can then send a message to the client
 
-- The server can then send a message to the client
+		This messaging pattern is followed until the either:
 
-- This messaging pattern is followed until the either:
+			The client ends the chat session, by typing “\quit”, without parentheses, or the client times out (after 3 minutes)
 
-- The client ends the chat session, by typing “\quit”, without
-
-- The server ends the chat session by typing “\quit”, without parentheses, or the client times out (after 3 minutes) parentheses 
-(this will allow the server to chat with other clients) or by using Ctrl-C to end the entire program
+			The server ends the chat session by typing “\quit”, without parentheses (this will allow the server to chat with other clients) or by using Ctrl-C to end the entire program
 
 - Once a client quits the chat, the server can remain on, waiting for more clients.
